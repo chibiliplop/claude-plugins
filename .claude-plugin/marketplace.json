@@ -9,7 +9,7 @@
     {
       "name": "generate-architecture",
       "description": "Génère une documentation d'architecture technique (ARCHITECTURE.md) en utilisant le LSP et des subagents.",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "source": "./generate-architecture/",
       "author": {
         "name": "tnabet"
