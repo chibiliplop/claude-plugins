@@ -1,0 +1,8 @@
+{
+  "name": "reviewing-design-specs",
+  "version": "1.0.0",
+  "description": "Structured review of technical design specs from Confluence - coherence, over-engineering, SOLID, HTTP semantics, and security.",
+  "author": {
+    "name": "tnabet"
+  }
+}
