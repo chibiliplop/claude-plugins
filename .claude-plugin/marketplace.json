@@ -1,0 +1,19 @@
+{
+  "name": "claude-plugins",
+  "description": "Personal Claude Code plugins by tnabet",
+  "owner": {
+    "name": "tnabet",
+    "email": "tnabet@hellowork.com"
+  },
+  "plugins": [
+    {
+      "name": "generate-architecture",
+      "description": "Génère une documentation d'architecture technique (ARCHITECTURE.md) en utilisant le LSP et des subagents.",
+      "version": "1.0.0",
+      "source": "./generate-architecture/",
+      "author": {
+        "name": "tnabet"
+      }
+    }
+  ]
+}
