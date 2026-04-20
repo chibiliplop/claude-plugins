@@ -1,17 +1,18 @@
 ---
 name: reviewing-design-specs
-description: Use when reviewing a technical design or architecture spec from Confluence - checks for coherence, over-engineering, missing use cases, SOLID compliance, HTTP semantics, and security concerns
+description: Use when reviewing a technical design or architecture spec - from Confluence (via acli), a Markdown file, or a text file - checks for coherence, over-engineering, missing use cases, SOLID compliance, HTTP semantics, and security concerns
 ---
 
 # Reviewing Design Specs
 
 ## Overview
 
-Structured review of technical design specs fetched from Confluence via MCP. Catch incoherence, over-engineering, missing edge cases, and technical blind spots before implementation.
+Structured review of technical design specs from any source (Confluence via acli, Markdown file, or pasted text). Catch incoherence, over-engineering, missing edge cases, and technical blind spots before implementation.
 
 ## When to Use
 
-- User shares a Confluence spec link for review
+- User shares a Confluence page link or ID for review
+- User shares a Markdown or text file containing a design spec
 - User asks to "challenge" or "review" a design
 - Before a design review meeting
 
@@ -21,7 +22,7 @@ Structured review of technical design specs fetched from Confluence via MCP. Cat
 
 ```dot
 digraph review {
-  "Fetch spec via MCP" -> "Identify system type";
+  "Fetch spec" -> "Identify system type";
   "Identify system type" -> "Run review checklist";
   "Run review checklist" -> "Present findings by severity";
   "Present findings by severity" -> "Discuss interactively";
@@ -30,7 +31,15 @@ digraph review {
 
 ### 1. Fetch the Spec
 
-Use `getConfluencePage` with `contentFormat: markdown`. Extract: problem statement, proposed solution, migration plan.
+Adapt to the source provided by the user:
+
+| Source | How to fetch |
+|--------|-------------|
+| Confluence (ID ou URL) | `acli confluence page view <id>` |
+| Fichier Markdown / texte | Lire le fichier directement |
+| Contenu collé dans le chat | Utiliser tel quel |
+
+Extract: problem statement, proposed solution, migration plan.
 
 ### 2. Identify System Type
 
@@ -113,4 +122,4 @@ When user wants to comment on the spec:
 - **Concise**: 2-4 sentences per point
 - **Actionable**: problem + concrete alternative
 - **Respectful**: "Proposition :" not "Erreur :"
-- Use `addCommentToConfluencePage` or `createConfluenceInlineComment` via MCP
+- Use `acli confluence page comment <id> -b "message"` pour ajouter un commentaire
