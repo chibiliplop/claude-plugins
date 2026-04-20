@@ -1,6 +1,6 @@
 ---
 name: generate-architecture-doc
-description: Génère une documentation d'architecture technique (ARCHITECTURE.md) complète, standardisée, visuelle et factuelle en utilisant le LSP et des subagents.
+description: Use when you need to produce or refresh an ARCHITECTURE.md for a codebase — maps components, data flows, infra, security, and dependencies using LSP and subagents.
 ---
 
 # Skill: Generate Architecture Doc
