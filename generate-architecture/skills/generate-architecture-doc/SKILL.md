@@ -26,6 +26,7 @@ Les raccourcis (`...`), impressions, ou noms de fichiers isolés (ex: `auth.ts` 
    - Fournir tous les rapports des `repo-explorer` au rédacteur.
    - Le rédacteur compile les données dans le template imposé.
    - Le rédacteur génère le diagramme global de dépendances en syntaxe Mermaid.
+   - **INTERDIT :** L'orchestrateur ne doit JAMAIS inclure un template ou une structure de document dans le prompt envoyé à l'agent `architecture-writer`. Le template est entièrement défini dans la définition de l'agent `architecture-writer` — toute redéfinition dans le prompt l'écrase et produit un document hors-spec.
 
 ## Résultat Attendu
 Un fichier `ARCHITECTURE.md` à la racine, prêt pour l'onboarding, où chaque chemin cité peut être lu directement via une commande `cat [chemin_cite]`.
