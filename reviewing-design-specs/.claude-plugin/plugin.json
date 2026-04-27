@@ -1,7 +1,7 @@
 {
   "name": "reviewing-design-specs",
-  "version": "1.0.0",
-  "description": "Structured review of technical design specs from Confluence - coherence, over-engineering, SOLID, HTTP semantics, and security.",
+  "version": "1.1.0",
+  "description": "Structured review of technical design specs (Confluence, Markdown, text) - coherence, over-engineering, SOLID, HTTP semantics, GDPR, CDN/Varnish PII leaks, observability, architectural N+1, and domain-specific concerns (email, API, data pipeline, auth, payments).",
   "author": {
     "name": "tnabet"
   }
