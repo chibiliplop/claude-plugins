@@ -23,6 +23,15 @@
       "author": {
         "name": "tnabet"
       }
+    },
+    {
+      "name": "olive",
+      "description": "Senior-engineer devil's advocate. Challenges AI-generated plans, designs, architecture decisions, and code before they ship — surfaces blind spots, hidden assumptions, failure modes, and optimistic shortcuts via steel-manning, pre-mortem, inversion, and Socratic questioning.",
+      "version": "1.0.0",
+      "source": "./olive/",
+      "author": {
+        "name": "tnabet"
+      }
     }
   ]
 }
