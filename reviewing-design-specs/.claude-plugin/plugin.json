@@ -1,7 +1,7 @@
 {
   "name": "reviewing-design-specs",
-  "version": "1.1.0",
-  "description": "Structured review of technical design specs (Confluence, Markdown, text) - coherence, over-engineering, SOLID, HTTP semantics, GDPR, CDN/Varnish PII leaks, observability, architectural N+1, and domain-specific concerns (email, API, data pipeline, auth, payments).",
+  "version": "1.2.0",
+  "description": "Structured review of technical design specs (Confluence, Markdown, text) - Socratic clarity pass (surfaces implicit/ambiguous/missing info), coherence, over-engineering, SOLID, HTTP semantics, GDPR, CDN/Varnish PII leaks, observability, architectural N+1, and domain-specific concerns (email, API, data pipeline, auth, payments). Supports --interactive mode for inline clarification.",
   "author": {
     "name": "tnabet"
   }
